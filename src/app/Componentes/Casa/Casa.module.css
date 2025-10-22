@@ -1,0 +1,139 @@
+.container_banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+    background-image: url('/banner1.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #fff;
+}
+
+
+.container_banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+
+    height: 100%;
+    background-color: rgba(0, 40, 120, 0.7);
+
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    z-index: 1;
+}
+
+.container_banner h1,
+.container_banner p,
+.container_banner a {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.container_banner h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.container_banner p {
+    font-size: 10px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.container_banner a {
+    display: inline-block;
+    padding: 6px 18px;
+    background-color: #17b978;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.container_banner a:hover {
+    background-color: #139d68;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container_banner::before {
+        width: 65%;
+    }
+
+    .container_banner h1,
+    .container_banner p,
+    .container_banner a {
+        position: relative;
+        z-index: 1;
+        max-width: 400px;
+        text-align: left;
+    }
+
+
+    .container_banner h1 {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    .container_banner p {
+        font-size: 8px;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    .container_banner a {
+        font-size: 8px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (ex.: smartphones) */
+@media (max-width: 480px) {
+    .container_banner {
+        height: 60vh;
+    }
+
+    .container_banner::before {
+        width: 65%;
+    }
+
+    .container_banner h1,
+    .container_banner p,
+    .container_banner a {
+        position: relative;
+        z-index: 1;
+        max-width: 150px;
+        text-align: left;
+    }
+
+
+    .container_banner h1 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    .container_banner p {
+        font-size: 10px;
+        line-height: 8px;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .container_banner a {
+        font-size: 4px;
+    }
+}

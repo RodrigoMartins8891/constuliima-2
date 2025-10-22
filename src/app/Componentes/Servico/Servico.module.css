@@ -1,0 +1,201 @@
+.container_servico {
+    width: 100%;
+    max-width: 1024px;
+    height: 100vh;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    scroll-margin-top: 60px;
+}
+
+
+.container_servico h2 {
+    font-size: 24px;
+    scroll-margin-top: 100px;
+}
+
+.container_servico span {
+    color: #17b978;
+}
+
+.imagem {
+    width: 45px;
+    height: 45px;
+}
+
+.container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.cards {
+    background-color: #f7f7f7;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding-bottom: 1.5rem;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+}
+
+.imagem {
+    width: 100px;
+    height: auto;
+    border-bottom: 3px solid #17b978;
+}
+
+/* Títulos */
+.cards h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin: 1rem 0 0.5rem;
+}
+
+/* Texto curto (resumo) */
+.textoCurto {
+    font-size: 0.95rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Texto completo (inicialmente escondido) */
+.textoCompleto {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Quando expandido */
+.expanded {
+    max-height: 300px;
+    /* ajuste conforme o tamanho do texto */
+    opacity: 1;
+    margin-top: 0.5rem;
+}
+
+/* Botão "Leia mais" */
+.botaoLeiaMais {
+    background-color: #17b978;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.botaoLeiaMais:hover {
+    background-color: #139f66;
+    transform: scale(1.05);
+}
+
+/* ----------- RESPONSIVIDADE ----------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container_servico {
+        margin: 140px auto;
+        font-size: 10px;
+        height: 10%;
+    }
+
+    .container_servico h2 {
+        font-size: 22px;
+    }
+
+    .cards h3 {
+        font-size: 14px;
+    }
+
+    .textoCurto {
+        font-size: 10px;
+    }
+
+    .cards {
+        max-width: 45%;
+    }
+
+    .imagem {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container_servico {
+        margin: 10px auto 180px auto;
+        font-size: 10px;
+        height: 90vh;
+    }
+
+    .container_servico h2 {
+        font-size: 18px;
+    }
+
+    .container_cards {
+        gap: 1rem;
+    }
+
+    .cards h3 {
+        font-size: 12px;
+    }
+
+    .textoCurto {
+        font-size: 10px;
+    }
+
+    .cards {
+        max-width: 100%;
+    }
+
+    .imagem {
+        width: 40px;
+    }
+
+    .botaoLeiaMais {
+        font-size: 10px;
+        padding: 5px 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container_servico {
+        margin: 10px auto 180px auto;
+        font-size: 8px;
+        height: 90vh;
+    }
+
+    .container_servico h2 {
+        font-size: 16px;
+    }
+
+    .cards h3 {
+        font-size: 10px;
+    }
+
+    .textoCurto {
+        font-size: 8px;
+    }
+
+    .imagem {
+        width: 35px;
+    }
+
+    .botaoLeiaMais {
+        font-size: 8px;
+        padding: 4px 10px;
+    }
+}

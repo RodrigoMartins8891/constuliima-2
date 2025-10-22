@@ -1,0 +1,128 @@
+.projetos {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0px auto;
+    height: 100vh;
+    text-align: center;
+    scroll-margin-top: 60px;
+
+}
+
+.projetos h2 {
+    font-size: 24px;
+    scroll-margin-top: 100px;
+}
+
+.projetos span {
+    color: #17b978;
+}
+
+.container_imagem {
+    width: 100%;
+    max-width: 1024px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 400px;
+    justify-content: stretch;
+    animation: animete 10s linear infinite;
+    margin: 10px auto;
+    background: #f8f8f8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+@keyframes animete {
+    to {
+        translate: calc(-4 * 16rem);
+    }
+}
+
+.imagem {
+    width: 600px;
+    height: 500px;
+}
+
+/* ----------- RESPONSIVIDADE ----------- */
+@media (max-width: 768px) {
+    .projetos {
+        height: 100vh;
+
+    }
+
+    .container_imagem {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2, 1fr);
+        /* 3 colunas */
+        grid-auto-columns: unset;
+        animation: none;
+        /* desativa o movimento automático */
+        overflow: hidden;
+    }
+
+    .projetos h2 {
+        font-size: 22px;
+    }
+
+    .imagem {
+        width: 300px;
+        height: 200px;
+    }
+
+    .container_imagem::before,
+    .container_imagem::after {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projetos {
+        height: 90vh;
+    }
+
+    .container_imagem {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2, 1fr);
+        /* 3 colunas */
+        grid-auto-columns: unset;
+        animation: none;
+        /* desativa o movimento automático */
+        overflow: hidden;
+    }
+
+    .imagem {
+        width: 200px;
+        height: 150px;
+    }
+
+    .projetos h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 360px) {
+    .projetos {
+        height: 100vh;
+    }
+
+    .container_imagem {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2, 1fr);
+        /* 3 colunas */
+        grid-auto-columns: unset;
+        animation: none;
+        /* desativa o movimento automático */
+        overflow: hidden;
+    }
+
+    .imagem {
+        width: 170px;
+        height: 100px;
+    }
+
+    .projetos h2 {
+        font-size: 18px;
+    }
+}
