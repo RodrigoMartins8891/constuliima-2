@@ -12,11 +12,11 @@ Este projeto Full-Stack (ou Front-End com interatividade avançada, dependendo d
 
 | Categoria | Tecnologia | Descrição |
 | :--- | :--- | :--- |
-| **Front-End** | **ReactJS** / Next.js (ou a que você usou) | Biblioteca principal para a construção de componentes modulares. |
+| **Front-End** | **ReactJS** / Next.js | Biblioteca principal para a construção de componentes modulares. |
 | **Linguagem** | **JavaScript** (ES6+) | Lógica de programação, manipulação do DOM e interatividade. |
-| **Estilização** | **CSS Modules** / Tailwind CSS (ou a que você usou) | Estilização moderna e manutenção de código escalável. |
+| **Estilização** | **CSS Modules** / CSS| Estilização moderna e manutenção de código escalável. |
 | **Deploy** | **Vercel** | Plataforma utilizada para a hospedagem e entrega contínua (CI/CD) do site. |
-| **Outros** | API de Contato (Ex: Formspree/EmailJS) | Gerenciamento de envios de formulários. (Se aplicável) |
+| **Outros** | API de Contato | Gerenciamento de envios de formulários.|
 
 ## ✨ Principais Funcionalidades e Aprendizados
 
